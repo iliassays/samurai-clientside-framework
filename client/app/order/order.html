@@ -1,0 +1,415 @@
+<!--<div class="page page-dashboard" data-ng-controller="OrderCtrl">
+
+    <div class="row">
+        <div class="col-md-12">
+            <div class="panel panel-default panel-minimal">
+                <div class="divider divider-md"></div>
+                <div class="panel-heading">Order</div>
+                <div class="panel-body">
+                    
+                    <div class="divider divider-lg"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="row">
+        <div class="col-md-12">
+            <div class="panel panel-default">
+                <div class="panel-body padding-lg">
+                    <div class="row">
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="row">
+       
+    </div>
+
+</div>-->
+<div class="container page-order" data-ng-controller="OrderCtrl">
+    <div class="row">
+        <div class="col-xs-12 col-md-3 order-sidebar">
+            <div class="logo">
+                <img src="images/assets/logo.jpg">
+            </div>
+            <nav class="navbar">
+                <ul class="nav bs-docs-sidenav"> 
+                    <li class=""> 
+                        <a href="#propertyad" class="groupHeader">PROPERTY AD</a> 
+                        <ul class="nav"> 
+                            <li class=""><a href="#propertyad-ad-type">Choose Ad Type</a></li> 
+                            <li class=""><a href="#propertyad-social-media">Choose Social Media</a></li> 
+                            <li class=""><a href="#propertyad-budget">Choose Budget</a></li>
+                            <li class=""><a href="#propertyad-extra-option">Extra Options</a></li>
+                        </ul> 
+                    </li> 
+                    <li class=""> 
+                        <a href="#agentad" class="groupHeader">AGENT AD</a> 
+                        <ul class="nav"> 
+                            <li class=""><a href="#agentad-social-media">Choose Social Media</a></li>
+                            <li class=""><a href="#agentad-budget">Choose Budget</a></li>
+                        </ul> 
+                    </li>
+                    <li class="">
+                        <a href="#summary">Summary</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="col-xs-12 col-md-9 order-content">
+            <section class="ui-section" id="propertyad">                
+                <div class="row">
+                    <div class="col-lg-8 clearfix">
+                        <h2 class="section-header">Publish <mark><a href="#">Dimgatan 17</a></mark> on social media!</h2>
+                    </div>                
+                    <div class="col-xs-12 col-md-6">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia porta lorem luctus suscipit. Etiam in tortor fringilla, mollis augue non, pretium orci. Nulla facilisi. </p>
+
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia porta lorem luctus suscipit. Etiam in tortor fringilla, mollis augue non, pretium orci. Nulla facilisi. </p>
+                                                
+                        <a ui-wave href="javascript:;" class="btn btn-primary btn-raised btn-lg btn-w-lg"style="margin:20px 0"> GET STARTED BY CHOOSING AD TYPE</a>
+                    </div>
+
+                    <div class="col-xs-12 col-md-6">
+                        <img class="img-responsive" src="images/assets/room.jpg">
+                    </div>
+                </div>
+            </section>
+            <section class="ui-section section-choose-ad-type" id="propertyad-ad-type">
+                <h2 class="section-header">Property Ad</h2>
+                <h3>1. Choose ad type</h3>
+                <div class="row">
+                    <div class="col-sm-3">
+                        <div class="panel mini-box">
+                            <!--<span class="btn-icon btn-icon-round btn-icon-lg-alt bg-danger">
+                                <i class="fa fa-video-camera"></i>
+                            </span>-->
+                            <div class="box-info">
+                                <p class="size-h4">Link Ad</p>
+                                <p class="text-muted">Awesome for generating website clicks</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="panel mini-box">
+                            <!--<span class="btn-icon btn-icon-round btn-icon-lg-alt bg-warning">
+                                <i class="fa fa-image"></i>
+                            </span>-->
+                            <div class="box-info">
+                                <p class="size-h4">Lead Ad</p>
+                                <p class="text-muted">Optimal for getting more leads</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="panel mini-box active">
+                            <!--<span class="btn-icon btn-icon-round btn-icon-lg-alt bg-success">
+                                <i class="fa fa-bookmark"></i>
+                            </span>-->
+                            <div class="box-info">
+                                <p class="size-h4">Video Ad</p>
+                                <p class="text-muted">The best option to impress your seller</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="panel mini-box">
+                            <!--<span class="btn-icon btn-icon-round btn-icon-lg-alt bg-info">
+                                <i class="fa fa-check"></i>
+                            </span>-->
+                            <div class="box-info">
+                                <p class="size-h4">Album Ad</p>
+                                <p class="text-muted">Amazing if you want comments on your ad</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="ui-section section-choose-social-media" id="propertyad-social-media">
+                <h3>2. Choose social media</h3>
+                <div>
+
+                    <!-- Nav tabs -->
+                    <ul class="nav nav-tabs" role="tablist">
+                        <li role="presentation" class="active">
+                            <a href="#facebook" aria-controls="facebook" role="tab" data-toggle="tab">
+                                <i class="fa fa-facebook-square"></i> Facebook <span class="fa fa-check"></span>
+                            </a>
+                        </li>
+                        <li role="presentation"><a href="#instagram" aria-controls="instagram" role="tab" data-toggle="tab"><i class="fa fa-instagram"></i> Instagram</a></li>
+                        <li role="presentation"><a href="#twitter" aria-controls="twitter" role="tab" data-toggle="tab"><i class="fa fa-twitter-square"></i> Twitter <span class="fa fa-check"></span></a></li>
+                        <li role="presentation"><a href="#google-adwords" aria-controls="google-adwords" role="tab" data-toggle="tab"><i class="fa fa-google"></i> Google Adwords</a></li>
+                        <li role="presentation"><a href="#fifth-tab" aria-controls="fifth-tab" role="tab" data-toggle="tab"><i class="fa fa-question"></i> Fifth Tab</a></li>
+                    </ul>
+
+                    <!-- Tab panes -->
+                    <div class="tab-content">
+                        <div role="tabpanel" class="tab-pane active" id="facebook">
+                            <div class="social-media-header">
+                                Use Facebook Ad <md-checkbox class="md-primary" aria-label="Pimary" > </md-checkbox>
+                            </div>
+
+                            <div class="row social-media-content">
+                                <div class="col-md-6 ad-container">
+                                    <div class="media ad-header">
+                                        <div class="media-left"> <a href="#"><img src="images/assets/img.jpg" alt="images"></a> </div>
+                                        <div class="media-body">
+                                            <h4 class="media-heading">Widerlöv & Co</h4>
+                                            <small>dd M kl. hh:mm</small>
+                                        </div>
+                                    </div>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sed elementum justo. Vivamus quis felis laoreet,</p>
+                                    <img class="img-responsive" src="images/assets/room2.jpg" alt="images">
+                                    <div class="media">
+                                        <div class="media-body">
+                                            <h4 class="media-heading">Stabby Allé 11</h4>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sed elementum justo. Vivamus quis felis laoreet, vulputate mauris a, convallis odio. <small>widerlov.se</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <a href="#" class="edit-btn">Edit and preview your ad live. Try now!</a> 
+                                    <a ui-wave href="javascript:;" class="btn btn-primary btn-raised btn-lg btn-w-lg" style="margin:20px 0"> <i class="zmdi zmdi-edit"></i> SWITCH TO EDIT MODE</a>
+                                    <div class="ad-specific-option">
+                                        <h4>FACEBOOK SPECIFIC OPTION</h4>
+                                        <div class="panel mini-box">
+                                            <div class="box-info">
+                                                <p class="size-h4">Post to wall</p>
+                                                <!--<p class="text-muted">Awesome for generating website clicks</p>-->
+                                            </div>
+                                        </div>
+                                        <div class="panel mini-box active">
+                                            <div class="box-info">
+                                                <p class="size-h4">Post as ad</p>
+                                                <!--<p class="text-muted">Awesome for generating website clicks</p>-->
+                                            </div>
+                                        </div>
+                                        <!--<div class="box-small">
+                                            <h4>Link Ad</h4>
+                                            <input type="radio" name="optionsRadios" id="optionsRadios1" class="right" value="option1" checked style="float:right">
+                                            <p>Lorem ipsum dolor sit amet, consectetur</p>
+                                        </div>
+                                        <div class="box-small">
+                                            <h4>Link Ad</h4>
+                                            <input type="radio" name="optionsRadios" id="optionsRadios1" class="right" value="option1" checked style="float:right">
+                                            <p>Lorem ipsum dolor sit amet, consectetur</p>
+                                        </div>-->
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div role="tabpanel" class="tab-pane" id="instagram">i</div>
+                        <div role="tabpanel" class="tab-pane" id="twitter">t</div>
+                        <div role="tabpanel" class="tab-pane" id="google-adwords">g</div>
+                        <div role="tabpanel" class="tab-pane" id="fifth-tab">f</div>
+                    </div>
+
+                </div>
+            </section>
+            <section class="ui-section section-choose-budget" id="propertyad-budget">
+                <h3>3. Choose budget</h3>
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="panel mini-box">
+                            <div class="box-info">
+                                <p class="size-h4">3000 People</p>
+                                <p class="divider"></p>
+                                <p class="text-muted">150 SEK</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="panel mini-box">
+                            <div class="box-info">
+                                <p class="size-h4">6000 People</p>
+                                <p class="divider"></p>
+                                <p class="text-muted">300 SEK</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="panel mini-box active">
+                            <div class="box-info">
+                                <p class="size-h4">15000 People</p>
+                                <p class="divider"></p>
+                                <p class="text-muted">750 SEK</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="ui-section section-choose-social-stories" id="propertyad-extra-option">
+                <h3>4. Social Stories (Beta)</h3>
+                <div class="row">
+                    <div class="col-xs-12 col-md-6">
+                        <p class="divider"></p>
+                        <p>If you activate social stories (by filling out the sellers stories, email address, the checkbox and pre-filled "story", the seller
+                        will receive an invitation to Widerlov shop app so that they can easily share their ad in social media).</p>
+                    </div>
+                    <div class="col-xs-12 col-md-6">
+                        <div class="panel panel-default">
+                            <div class="panel-body">
+                                <div class="use-social-stories">
+                                    Activate Social Stories
+                                    <md-checkbox class="md-primary" aria-label="Pimary"> </md-checkbox>
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputName2">SELLER’S EMAIL ADDRESS</label>
+                                    <input type="text" class="form-control" id="exampleInputName2">
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputName2">PRE FILLED STORY</label>
+                                    <textarea class="form-control" rows="3"></textarea>
+                                </div>
+                            </div>
+                        </div>                        
+                    </div>
+                </div>
+            </section>
+            <section class="ui-section section-choose-agent-ad" id="section-choose-agent-ad">
+                <h2 class="section-header">Agent Ad</h2>
+                <div class="row">
+                    <div class="col-xs-12 col-md-6">
+                        <p class="divider"></p>
+                        <p>
+                            Fill up with the text describing Agent Ads. Some more text to minic a more real life example of words that might be
+                            present in this really long sentence.
+                        </p>
+                    </div>
+                    <div class="col-xs-12 col-md-6">
+                        <div class="panel panel-default">
+                            <div class="panel-body">
+                                <div class="use-agent-ad">
+                                    Activate Social Stories
+                                    <md-checkbox class="md-primary" aria-label="Pimary"> </md-checkbox>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="ui-section section-choose-social-media" id="agentad-social-media">
+                <h3>1. Choose social media</h3>
+                <div>
+
+                    <!-- Nav tabs -->
+                    <ul class="nav nav-tabs" role="tablist">
+                        <li role="presentation" class="active">
+                            <a href="#facebook" aria-controls="facebook" role="tab" data-toggle="tab">
+                                <i class="fa fa-facebook-square"></i> Facebook <span class="fa fa-check"></span>
+                            </a>
+                        </li>
+                        <li role="presentation"><a href="#instagram" aria-controls="instagram" role="tab" data-toggle="tab"><i class="fa fa-instagram"></i> Instagram</a></li>
+                        <li role="presentation"><a href="#twitter" aria-controls="twitter" role="tab" data-toggle="tab"><i class="fa fa-twitter-square"></i> Twitter <span class="fa fa-check"></span></a></li>
+                        <li role="presentation"><a href="#google-adwords" aria-controls="google-adwords" role="tab" data-toggle="tab"><i class="fa fa-google"></i> Google Adwords</a></li>
+                        <li role="presentation"><a href="#fifth-tab" aria-controls="fifth-tab" role="tab" data-toggle="tab"><i class="fa fa-question"></i> Fifth Tab</a></li>
+                    </ul>
+
+                    <!-- Tab panes -->
+                    <div class="tab-content">
+                        <div role="tabpanel" class="tab-pane active" id="facebook">
+                            <div class="social-media-header">
+                                Use Facebook Ad <md-checkbox class="md-primary" aria-label="Pimary"> </md-checkbox>
+                            </div>
+
+                            <div class="row social-media-content">
+                                <div class="col-md-6 ad-container">
+                                    <div class="media ad-header">
+                                        <div class="media-left"> <a href="#"><img src="images/assets/img.jpg" alt="images"></a> </div>
+                                        <div class="media-body">
+                                            <h4 class="media-heading">Widerlöv & Co</h4>
+                                            <small>dd M kl. hh:mm</small>
+                                        </div>
+                                    </div>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sed elementum justo. Vivamus quis felis laoreet,</p>
+                                    <img class="img-responsive" src="images/assets/room2.jpg" alt="images">
+                                    <div class="media">
+                                        <div class="media-body">
+                                            <h4 class="media-heading">Stabby Allé 11</h4>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sed elementum justo. Vivamus quis felis laoreet, vulputate mauris a, convallis odio. <small>widerlov.se</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <a href="#" class="edit-btn">Edit and preview your ad live. Try now!</a>
+                                    <a ui-wave href="javascript:;" class="btn btn-primary btn-raised btn-lg btn-w-lg" style="margin:20px 0"> <i class="zmdi zmdi-edit"></i> SWITCH TO EDIT MODE</a>
+                                    <div class="ad-specific-option">
+                                        <h4>FACEBOOK SPECIFIC OPTION</h4>
+                                        <div class="panel mini-box">
+                                            <div class="box-info">
+                                                <p class="size-h4">Post to wall</p>
+                                                <!--<p class="text-muted">Awesome for generating website clicks</p>-->
+                                            </div>
+                                        </div>
+                                        <div class="panel mini-box active">
+                                            <div class="box-info">
+                                                <p class="size-h4">Post as ad</p>
+                                                <!--<p class="text-muted">Awesome for generating website clicks</p>-->
+                                            </div>
+                                        </div>
+                                        <!--<div class="box-small">
+                                    <h4>Link Ad</h4>
+                                    <input type="radio" name="optionsRadios" id="optionsRadios1" class="right" value="option1" checked style="float:right">
+                                    <p>Lorem ipsum dolor sit amet, consectetur</p>
+                                </div>
+                                <div class="box-small">
+                                    <h4>Link Ad</h4>
+                                    <input type="radio" name="optionsRadios" id="optionsRadios1" class="right" value="option1" checked style="float:right">
+                                    <p>Lorem ipsum dolor sit amet, consectetur</p>
+                                </div>-->
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div role="tabpanel" class="tab-pane" id="instagram">i</div>
+                        <div role="tabpanel" class="tab-pane" id="twitter">t</div>
+                        <div role="tabpanel" class="tab-pane" id="google-adwords">g</div>
+                        <div role="tabpanel" class="tab-pane" id="fifth-tab">f</div>
+                    </div>
+
+                </div>
+            </section>
+            <section class="ui-section section-choose-budget" id="agentad-budget">
+                <h3>2. Choose budget</h3>
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="panel mini-box">
+                            <div class="box-info">
+                                <p class="size-h4">3000 People</p>
+                                <p class="divider"></p>
+                                <p class="text-muted">150 SEK</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="panel mini-box">
+                            <div class="box-info">
+                                <p class="size-h4">6000 People</p>
+                                <p class="divider"></p>
+                                <p class="text-muted">300 SEK</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="panel mini-box active">
+                            <div class="box-info">
+                                <p class="size-h4">15000 People</p>
+                                <p class="divider"></p>
+                                <p class="text-muted">750 SEK</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+</div>    
